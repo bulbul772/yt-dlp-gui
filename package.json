@@ -1,0 +1,15 @@
+{
+  "name": "yt-dw-custom",
+  "version": "1.0.0",
+  "description": "A custom YouTube video downloader desktop app",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron ."
+  },
+  "author": "ahmed bulbul",
+  "license": "MIT",
+  "dependencies": {
+    "electron": "^29.0.0",
+    "ytdlp-nodejs": "^1.0.0"
+  }
+}

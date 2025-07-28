@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>YT DW CUSTOM</title>
+  <link rel="stylesheet" href="styles.css" />
+  <style>
+    html, body { height: 100%; }
+    body { min-height: 100vh; }
+    main { padding-bottom: 100px; }
+  </style>
+</head>
+<body class="light">
+  <header>
+    <h1>Video Downloader</h1>
+    <div>
+      <button id="themeDefault">☀️ Default</button>
+      <button id="themeSunset">🌇 Sunset</button>
+      <button id="themeMoon">🌙 Moon Night</button>
+      <button id="themeWhDark">🌑 WH-Dark</button>
+      <button id="themeGlowMoon">✨ Glow Moon</button>
+      <button id="showHistoryBtn">📜 History</button>
+    </div>
+  </header>
+  <main>
+    <div id="urlBoxes"></div>
+    <section id="queueSection">
+      <h3>Queue</h3>
+      <ul id="queueList"></ul>
+      <button id="clearBtn" style="display:none">Clear Finished</button>
+    </section>
+  </main>
+  <footer>
+    <div id="folderSelectArea">
+      <div style="display:inline-block; margin-right:2em;">
+        <button id="browseShortFolderBtn">Browse (short)</button>
+        <span id="folderShortPath"></span>
+      </div>
+      <div style="display:inline-block;">
+        <button id="browseLongFolderBtn">Browse (long)</button>
+        <span id="folderLongPath"></span>
+      </div>
+    </div>
+    <div id="folderPopup" style="display:none; position:fixed; left:50%; top:60%; transform:translate(-50%,-50%); background:#222; color:#fff; padding:1em 2em; border-radius:8px; z-index:9999; font-size:1.1em; box-shadow:0 2px 16px #0008;">
+      Folder set success.
+    </div>
+  </footer>
+  <div id="historyModal">
+    <span id="closeHistory">&times;</span>
+    <h2>Download History</h2>
+    <ul id="historyList"></ul>
+  </div>
+  <script src="renderer.js"></script>
+</body>
+</html>

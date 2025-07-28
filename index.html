@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>YT DW CUSTOM</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body class="light">
+  <header>
+    <h1>Video Downloader</h1>
+    <button id="themeToggle">🌙 Dark</button>
+  </header>
+
+  <main>
+    <div id="urlBox">
+      <input id="urlInput" type="text" placeholder="Paste URL or drag here…" />
+      <button id="pasteBtn">📋 Paste</button>
+    </div>
+
+    <div id="infoPanel" style="display:none">
+      <img id="thumb" />
+      <p id="title"></p>
+      <p id="uploader"></p>
+      <p id="size"></p>
+    </div>
+
+    <div id="settings" style="display:none">
+      <label>
+        Save to:
+        <input id="savePath" value="/media/ahmed_bulbul/hdd/ytdw" readonly />
+        <button id="browseBtn">Browse</button>
+      </label>
+
+      <label>
+        Format:
+        <select id="formatSelect"></select>
+      </label>
+
+      <button id="downloadBtn">⬇ Download</button>
+    </div>
+
+    <section id="queueSection">
+      <h3>Queue</h3>
+      <ul id="queueList"></ul>
+      <button id="clearBtn" style="display:none">Clear Finished</button>
+    </section>
+  </main>
+
+  <script src="renderer.js"></script>
+</body>
+</html>
+
